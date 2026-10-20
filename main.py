@@ -1,18 +1,28 @@
 from pyscript import document, display
 
-def add_brand(e):
-    document.getElementById('output1').innerHTML = ""
-    brands = {'Uniqlo', 'Bench', 'Zara'}
+def add_member(e):
+    document.getElementById('result').innerHTML = ""
 
-    input_brand = document.getElementById('input1').value
+    gr7 = {'Sher Mistle', 'Dia Mider'}
+    gr8 = {'Ein Scribe', 'Johnny Dunnings'}
+    gr9 = {'Paul Nomiyal', 'Stew Oaks'}
+    gr10 = {'Nell Alonso', 'Bea Nomiyal'}
 
-    new_brand_set = {input_brand}
+    club_list = gr7 | gr8 | gr9 | gr10
 
-    all_brands = brands | new_brand_set # combines the two sets into one
+    added_name = ocument.getElementById('name').value
+    added_name = document.getElementById('name').value
+    name = fname + " " + lname
 
-    total_brands = len(brands | new_brand_set)
+    added_name = document.getElementById('name').value
 
-    brand_list = "<br>".join(sorted(all_brands))
+    new_club_list = {added_name}
+
+    true_club_list = club_list | added_name # combines the two sets into one
+
+    total_num = len(club_list | added_name)
+
+    club_list = "<br>".join(sorted(true_club_lists))
 
     # display--
     document.getElementById('output1').innerHTML = f'All brands: <br> {brand_list}'
