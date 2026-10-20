@@ -15,13 +15,11 @@ def add_member(e):
 
     name = fname + " " + lname
 
-    added_name = document.getElementById('name').value
+    new_club_list = {name}
 
-    new_club_list = {added_name}
+    true_club_list = club_list | new_club_list # combines the two sets into one
 
-    true_club_list = club_list | added_name # combines the two sets into one
-
-    total_num = len(club_list | added_name)
+    total_num = len(club_list | new_club_list)
 
     display_list = "<br>".join(sorted(true_club_list))
 
