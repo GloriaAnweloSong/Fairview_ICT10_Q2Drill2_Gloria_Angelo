@@ -10,8 +10,9 @@ def add_member(e):
 
     club_list = gr7 | gr8 | gr9 | gr10
 
-    added_name = ocument.getElementById('name').value
-    added_name = document.getElementById('name').value
+    document.getElementById('fname').value
+    document.getElementById('lname').value
+
     name = fname + " " + lname
 
     added_name = document.getElementById('name').value
@@ -22,8 +23,8 @@ def add_member(e):
 
     total_num = len(club_list | added_name)
 
-    club_list = "<br>".join(sorted(true_club_lists))
+    display_list = "<br>".join(sorted(true_club_list))
 
     # display--
-    document.getElementById('output1').innerHTML = f'All brands: <br> {brand_list}'
-    display(f'Total Brands: {total_brands}', target="output1")
+    document.getElementById('result').innerHTML = f'All members: <br> {display_list}'
+    display(f'Total Members: {total_num}', target="result")
