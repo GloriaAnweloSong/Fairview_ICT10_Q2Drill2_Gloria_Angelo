@@ -10,8 +10,8 @@ def add_member(e):
 
     club_list = gr7 | gr8 | gr9 | gr10
 
-    document.getElementById('fname').value
-    document.getElementById('lname').value
+    fname = document.getElementById('fname').value
+    lname = document.getElementById('lname').value
 
     name = fname + " " + lname
 
